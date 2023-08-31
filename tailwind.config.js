@@ -5,28 +5,19 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-    screens: {
-      'xs': '300px',
+    extend: {
 
-      'sm': '640px',
-      // => @media (min-width: 640px) { ... }
-
-      'md': '720px',
-
-      'lg': '1024px',
-      // => @media (min-width: 1024px) { ... }
-
-      'xl': '1280px',
-      // => @media (min-width: 1280px) { ... }
-
-      '2xl': '1440px',
-      // => @media (min-width: 1440px) { ... }
-
-      '3xl': '1920px',
-      // => @media (min-width: 1920px) { ... }
+      animation: {
+        bounceShort: "bounce 750ms ease-in 2.5",
+        pingShort: "ping 1s ease-in 1",
+        spinSlow: "spin 5s linear infinite",
+      },
     },
-
+    fontFamily: {
+      "Doris": ["Dosis", "sans-serif"],
+      "OpenSan": ["Open Sans", 'sans-serif']
+    }
   },
   plugins: [],
 }
+

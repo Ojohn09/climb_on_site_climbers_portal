@@ -1,18 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import store from './redux/store/store.js'
-import { Provider } from 'react-redux'
-import './assets/fonts/Helvetica.ttf'
-import './assets/fonts/MonumentExtended-Regular.otf'
+import { Provider } from "react-redux";
+import App from './App.jsx';
+import './index.css';
 
 
+/*==== Importing AppStore ====*/
+import appStore from './redux/stores/AppStore.js';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Provider store={store}>
+    <Provider store={appStore}>
       <App />
     </Provider>
-  </React.StrictMode>
+  </React.StrictMode>,
 )
